@@ -1,0 +1,17 @@
+# Dawood Equipment Co. - robots.txt
+# https://dawoodequipment-production.up.railway.app
+
+User-agent: *
+Allow: /
+
+# Block admin routes from indexing
+Disallow: /admin
+Disallow: /api/
+Disallow: /#login
+
+# Allow Google Image Bot
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+# Sitemap location
+Sitemap: https://dawoodequipment-production.up.railway.app/sitemap.xml
