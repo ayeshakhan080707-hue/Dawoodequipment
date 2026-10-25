@@ -1,0 +1,6 @@
+{
+  "name": "Dawood Equipment Co - Heavy Equipment Sales & Worldwide Export",
+  "description": "Commercial heavy machinery sales platform featuring Caterpillar, Komatsu, and Case inventory, buyer & admin portals, export freight calculators, and turnkey containerizing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
