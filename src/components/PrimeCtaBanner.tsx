@@ -43,40 +43,27 @@ export const PrimeCtaBanner: React.FC<PrimeCtaBannerProps> = ({
 
       </div>
 
-      {/* Heavy Excavator Arm & Bucket Graphic Framing matching reference image */}
-      <div className="relative mt-8 max-w-5xl mx-auto h-48 sm:h-64 flex items-end justify-between px-4 sm:px-12 pointer-events-none select-none opacity-90">
+      {/* Machinery Images framing the CTA section */}
+      <div className="relative mt-8 max-w-6xl mx-auto h-72 sm:h-96 md:h-[480px] flex items-end justify-between px-0 pointer-events-none select-none overflow-visible">
         
-        {/* Left: Heavy excavator boom arm */}
-        <div className="w-48 sm:w-72 h-full flex items-end">
-          <svg viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto drop-shadow-2xl">
-            {/* Boom hydraulic arm */}
-            <path d="M20 240 L120 120 L220 70 L260 140" stroke="#FFB800" strokeWidth="24" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M30 240 L125 130 L215 85 L250 145" stroke="#D97706" strokeWidth="8" />
-            {/* Hydraulic cylinder */}
-            <line x1="80" y1="180" x2="190" y2="100" stroke="#CBD5E1" strokeWidth="10" strokeLinecap="round" />
-            <line x1="100" y1="165" x2="170" y2="115" stroke="#475569" strokeWidth="4" />
-            {/* Bucket with teeth */}
-            <path d="M250 140 L280 200 L210 220 L200 170 Z" fill="#334155" stroke="#0F172A" strokeWidth="3" />
-            {/* Teeth */}
-            <polygon points="280,200 295,210 285,215" fill="#FFB800" />
-            <polygon points="265,205 280,215 270,220" fill="#FFB800" />
-            <polygon points="250,210 265,220 255,225" fill="#FFB800" />
-          </svg>
+        {/* Left: Heavy Yellow All-Terrain Crane Truck */}
+        <div className="w-72 sm:w-[420px] md:w-[560px] h-full flex items-end">
+          <img
+            src="/assets/images/Heavy Yellow All-Terrain Crane Truck.png"
+            alt="Heavy Yellow All-Terrain Crane Truck"
+            className="w-full h-full object-contain object-bottom drop-shadow-2xl"
+            draggable={false}
+          />
         </div>
 
-        {/* Right: Steel scoop bucket */}
-        <div className="w-44 sm:w-64 h-full flex items-end justify-end">
-          <svg viewBox="0 0 260 200" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto drop-shadow-2xl">
-            <path d="M20 190 L240 190 L250 110 L180 80 L30 110 Z" fill="#475569" stroke="#1E293B" strokeWidth="4" />
-            <path d="M30 110 L180 80 L230 130" stroke="#64748B" strokeWidth="3" />
-            {/* Heavy rock teeth */}
-            <polygon points="20,190 5,180 15,170" fill="#FFB800" />
-            <polygon points="60,190 45,180 55,170" fill="#FFB800" />
-            <polygon points="100,190 85,180 95,170" fill="#FFB800" />
-            <polygon points="140,190 125,180 135,170" fill="#FFB800" />
-            <polygon points="180,190 165,180 175,170" fill="#FFB800" />
-            <polygon points="220,190 205,180 215,170" fill="#FFB800" />
-          </svg>
+        {/* Right: Detailed Yellow Tower Crane */}
+        <div className="w-56 sm:w-80 md:w-[420px] h-full flex items-end justify-end">
+          <img
+            src="/assets/images/Detailed Yellow Tower Crane Isolated.png"
+            alt="Detailed Yellow Tower Crane"
+            className="w-full h-full object-contain object-bottom drop-shadow-2xl"
+            draggable={false}
+          />
         </div>
 
       </div>
