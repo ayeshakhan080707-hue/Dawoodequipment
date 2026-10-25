@@ -110,7 +110,7 @@ export const Hero: React.FC<HeroProps> = ({
               {/* Image asset with measured contrast scrim */}
               <div className="relative h-[340px] sm:h-[420px] lg:h-full min-h-[380px] w-full overflow-hidden">
                 <img
-                  src="/src/assets/images/hero_excavator_heavy_1792859629737.jpg"
+                  src="/assets/images/hero_excavator_heavy_1792859629737.jpg"
                   alt="CAT 395 Next-Gen Ultra Heavy Hydraulic Excavator in Night Quarry"
                   className="w-full h-full object-cover object-center filter brightness-95 group-hover:scale-102 transition-transform duration-700 ease-out"
                   referrerPolicy="no-referrer"

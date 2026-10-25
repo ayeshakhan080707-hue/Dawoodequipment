@@ -101,7 +101,7 @@ export const PrimeHero: React.FC<PrimeHeroProps> = ({ onOpenQuote, onBrowseInven
           {/* Central Heavy Loader Image */}
           <div className="relative w-full max-w-5xl mx-auto h-[380px] sm:h-[480px] md:h-[580px] overflow-hidden rounded-t-2xl shadow-xl border-x border-t border-slate-200">
             <img
-              src="/src/assets/images/fleet_mining_loader_1792859632094.jpg"
+              src="/assets/images/fleet_mining_loader_1792859632094.jpg"
               alt="Dawood Equipment Heavy Construction Machinery Ready for Sale and Export"
               className="w-full h-full object-cover object-center filter contrast-105 brightness-100"
               referrerPolicy="no-referrer"

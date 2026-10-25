@@ -233,7 +233,7 @@ export const MachineryDetailPage: React.FC<MachineryDetailPageProps> = ({
                     }
                     referrerPolicy="no-referrer"
                     onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).src = '/src/assets/images/hero_excavator_heavy_1792859629737.jpg';
+                      (e.currentTarget as HTMLImageElement).src = '/assets/images/hero_excavator_heavy_1792859629737.jpg';
                     }}
                   />
 
@@ -311,7 +311,7 @@ export const MachineryDetailPage: React.FC<MachineryDetailPageProps> = ({
                         alt={`Thumbnail ${idx + 1}`}
                         className="w-full h-full object-cover"
                         onError={(e) => {
-                          (e.currentTarget as HTMLImageElement).src = '/src/assets/images/fleet_mining_loader_1792859632094.jpg';
+                          (e.currentTarget as HTMLImageElement).src = '/assets/images/fleet_mining_loader_1792859632094.jpg';
                         }}
                       />
                       <span className="absolute bottom-1 right-1 bg-slate-950/80 text-white text-[9px] font-mono px-1 rounded">

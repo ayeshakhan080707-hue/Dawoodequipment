@@ -63,7 +63,7 @@ export const MachineryCard: React.FC<MachineryCardProps> = ({
             referrerPolicy="no-referrer"
             onError={(e) => {
               // Graceful fallback to default asset if external url fails
-              (e.currentTarget as HTMLImageElement).src = '/src/assets/images/fleet_mining_loader_1792859632094.jpg';
+              (e.currentTarget as HTMLImageElement).src = '/assets/images/fleet_mining_loader_1792859632094.jpg';
             }}
           />
 

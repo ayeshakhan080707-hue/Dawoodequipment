@@ -52,7 +52,7 @@ export const PrimeBuiltOnTrust: React.FC<PrimeBuiltOnTrustProps> = ({ onLearnMor
         {/* Wide Cinematic Jobsite Photography matching reference */}
         <div className="mt-12 rounded-xl overflow-hidden shadow-2xl border border-slate-200 h-[360px] sm:h-[480px] lg:h-[540px] relative">
           <img
-            src="/src/assets/images/hero_excavator_heavy_1792859629737.jpg"
+            src="/assets/images/hero_excavator_heavy_1792859629737.jpg"
             alt="Active Heavy Civil Earthmoving Jobsite with Excavators and Bulldozers"
             className="w-full h-full object-cover filter contrast-105"
             referrerPolicy="no-referrer"
