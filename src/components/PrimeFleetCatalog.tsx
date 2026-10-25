@@ -198,14 +198,26 @@ export const PrimeFleetCatalog: React.FC<PrimeFleetCatalogProps> = ({
           </div>
         </div>
 
-        {/* Machinery Product Grid with Image Sliders on Cards */}
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Mobile swipe hint */}
+        <div className="mt-6 flex items-center gap-2 text-xs font-mono text-slate-400 md:hidden">
+          <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+          </svg>
+          <span>Swipe to browse units</span>
+          <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </div>
+
+        {/* Machinery Product Grid — horizontal scroll on mobile, grid on desktop */}
+        <div className="mt-4 md:mt-8 flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-none md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:overflow-x-visible -mx-4 px-4 md:mx-0 md:px-0">
           {filteredItems.slice(0, 9).map((item) => (
-            <MachineryCard
-              key={item.id}
-              item={item}
-              onInspectMachine={onInspectMachine}
-            />
+            <div key={item.id} className="snap-center shrink-0 w-[85vw] sm:w-[360px] md:w-auto md:shrink">
+              <MachineryCard
+                item={item}
+                onInspectMachine={onInspectMachine}
+              />
+            </div>
           ))}
         </div>
 
