@@ -5,6 +5,7 @@ import { connectDB } from './config/db.js';
 import { seedDatabase } from './seed.js';
 
 import path from 'path';
+import fs from 'fs';
 import { fileURLToPath } from 'url';
 import authRoutes from './routes/authRoutes.js';
 import equipmentRoutes from './routes/equipmentRoutes.js';
@@ -54,15 +55,17 @@ app.use('/api/sell-offers', sellOfferRoutes);
 app.use('/api/stats', statsRoutes);
 app.use('/api/taxonomy', taxonomyRoutes);
 
-// Manual trigger route for re-seeding if ever requested
-app.post('/api/seed', async (_req, res) => {
-  try {
-    await seedDatabase();
-    res.json({ success: true, message: 'Database re-seeded successfully' });
-  } catch (err: any) {
-    res.status(500).json({ success: false, message: err.message });
-  }
-});
+// Serve Vite frontend build in production
+const distPath = path.join(__dirname, '../dist');
+if (fs.existsSync(distPath)) {
+  app.use(express.static(distPath));
+  app.get('*', (req: express.Request, res: express.Response, next: express.NextFunction) => {
+    if (req.path.startsWith('/api') || req.path.startsWith('/uploads')) {
+      return next();
+    }
+    res.sendFile(path.join(distPath, 'index.html'));
+  });
+}
 
 // Error handling middleware
 app.use((err: any, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
